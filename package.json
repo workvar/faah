@@ -1,9 +1,9 @@
 {
-  "name": "faah",
-  "displayName": "Faah",
+  "name": "faah-errors",
+  "displayName": "Faah Errors",
   "description": "Plays \"Faah\" whenever there are build errors in your code.",
   "version": "0.0.1",
-  "publisher": "8852e9e2-94d9-649a-9fe2-44d15e9dd585",
+  "publisher": "WorkVar",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
-      "title": "Faah",
+      "title": "Faah Errors",
       "properties": {
         "faah.enabled": {
           "type": "boolean",
