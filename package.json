@@ -1,0 +1,62 @@
+{
+  "name": "faah",
+  "displayName": "Faah",
+  "description": "Plays \"Faah\" whenever there are build errors in your code.",
+  "version": "0.0.1",
+  "publisher": "you",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Faah",
+      "properties": {
+        "faah.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable the Faah sound."
+        },
+        "faah.source": {
+          "type": "string",
+          "enum": ["diagnostics", "tasks", "both"],
+          "default": "both",
+          "description": "What to listen to: editor diagnostics, build task failures, or both."
+        },
+        "faah.cooldownMs": {
+          "type": "number",
+          "default": 1500,
+          "description": "Minimum milliseconds between consecutive Faahs."
+        },
+        "faah.severity": {
+          "type": "string",
+          "enum": ["error", "warning"],
+          "default": "error",
+          "description": "Minimum diagnostic severity that triggers a Faah."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "faah.test",
+        "title": "Faah: Play Test Sound"
+      },
+      {
+        "command": "faah.toggle",
+        "title": "Faah: Toggle Enabled"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.4.0"
+  }
+}
