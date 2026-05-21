@@ -1,5 +1,7 @@
 .vscode/**
 .vscode-test/**
+.claude/**
+.code-review-graph/**
 src/**
 .gitignore
 tsconfig.json

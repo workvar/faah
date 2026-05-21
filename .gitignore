@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Compiled build output
+out/
+
+# Packaged VS Code extension
+*.vsix
+
+# Tooling / local-only directories
+.claude/
+.code-review-graph/
+.vscode-test/
+
+# OS files
+.DS_Store

@@ -3,7 +3,12 @@
   "displayName": "Faah",
   "description": "Plays \"Faah\" whenever there are build errors in your code.",
   "version": "0.0.1",
-  "publisher": "you",
+  "publisher": "8852e9e2-94d9-649a-9fe2-44d15e9dd585",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workvar/faah.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
