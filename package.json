@@ -2,7 +2,8 @@
   "name": "faah-errors",
   "displayName": "Faah Errors",
   "description": "Plays \"Faah\" whenever there are build errors in your code.",
-  "version": "0.0.1",
+  "icon": "media/icon.png",
+  "version": "0.0.2",
   "publisher": "WorkVar",
   "license": "MIT",
   "repository": {
@@ -46,11 +47,13 @@
     "commands": [
       {
         "command": "faah.test",
-        "title": "Faah: Play Test Sound"
+        "title": "Faah: Play Test Sound",
+        "icon": "media/test-icon.png"
       },
       {
         "command": "faah.toggle",
-        "title": "Faah: Toggle Enabled"
+        "title": "Faah: Toggle Enabled",
+        "icon": "media/toggle-icon.png"
       }
     ]
   },
